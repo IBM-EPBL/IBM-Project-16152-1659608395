@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Display ChatBot
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "8805dc20-0ce6-40ba-8ed2-bb26940f4f22", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "a9412a5a-d859-4b9e-81a9-3b6c803ac4fb", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          //t.src="https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fau-syd.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-a9412a5a-d859-4b9e-81a9-3b6c803ac4fb%3A%3A74e2fa02-f9cb-447e-b03f-2ceaf0e7e262&integrationID=8805dc20-0ce6-40ba-8ed2-bb26940f4f22&region=au-syd&serviceInstanceID=a9412a5a-d859-4b9e-81a9-3b6c803ac4fb"
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</head>
+<body>
+    <h1>ChatBot Page </h1>
+</body>
+</html>
