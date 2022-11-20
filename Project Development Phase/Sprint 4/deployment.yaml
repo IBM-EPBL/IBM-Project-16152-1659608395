@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Expense_Tracker
+  template:
+    metadata:
+      labels:
+        app: "Expense_Tracker"
+    spec:
+      containers:
+      - name: mycontainer
+        image: icr.io/project12/pro:latest

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %} 
+
+<p> Currently your MONTHLY limit is ₹ {{y}} </p>
+
+
+<form action="/limitnum" method="POST">
+
+    <p> ENTER the MONTHLY LIMIT to avoid over EXPENSES</p> <br/>
+    <div class="form-group">
+        <label for="">ID</label> 
+        <input class="form-control" type="number" name="userid" id="userid"></div>
+    <div class="form-group">
+        <label for="">LIMIT</label> 
+        <input class="form-control" type="number" name="lim" id="lim"></div> 
+    <button class="btn btn-warning" type="submit">ENTER</button>
+    </span>
+    
+
+
+
+</form>
+{% endblock %}
